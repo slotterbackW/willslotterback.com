@@ -1,0 +1,89 @@
+.shadow {
+    box-shadow: -4px 4px 10px #BDC3C7;
+}
+
+.section {
+    padding: 20px;
+    border: 1px solid #F0F3F4;
+}
+
+.filler {
+    padding: 20px;
+}
+
+hr {
+    border-top: 1px solid #F0F3F4;
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: background .2s ease-in;
+}
+
+.primary {
+    color: white;
+    background: #2ECC71;
+}
+
+.primary:hover {
+    cursor: pointer;
+    background: #82E0AA;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+/** Nav Links **/
+.nav-links {
+    margin: 0;
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 10px;
+}
+
+/** Profile **/
+.profile-div {
+    background-color: #ABEBC6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-resume {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Will Slotterback Main **/
+.skill-metric {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    list-style: none;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    margin: 5px;
+    border: 1px solid #ABEBC6;
+}
+
+.skill-rating {
+    margin-left: 20px;
+}
+
+.full {
+    background-color: #ABEBC6;
+}
