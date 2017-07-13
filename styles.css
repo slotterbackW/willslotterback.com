@@ -1,3 +1,35 @@
+body {
+    background-color: #F2F3F4;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(./assets/background_rev_1.png);
+    background-size: cover;
+}
+
+a:hover {
+    color: #2ECC71;
+}
+
+.col-8 {
+    background-color: white;
+}
+
+.no-bottom {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    background-color: transparent;
+}
+
+.last-section {
+    margin-bottom: 65px;
+}
+
 .shadow {
     box-shadow: -4px 4px 10px #BDC3C7;
 }
@@ -18,7 +50,7 @@ hr {
 .btn {
     border: none;
     border-radius: 50px;
-    padding: 10px 50px;
+    padding: 12px 30px;
     text-transform: uppercase;
     transition: background .2s ease-in;
 }
@@ -33,10 +65,31 @@ hr {
     background: #82E0AA;
 }
 
-h1 {
-    font-size: 5em;
+h4 {
+    margin: 0;
 }
 
+.label {
+    background-color: #ABEBC6;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    font-size: small;
+}
+
+
+ /* Should only be applied if window size is bigger than 873px */
+ @media (min-width: 873px) {
+    .label:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-style: solid;
+        border-width: 12.5px 0 12.5px 10px;
+        border-color: transparent transparent transparent #ABEBC6;
+    }
+ }
 /** Nav Links **/
 .nav-links {
     margin: 0;
@@ -46,6 +99,13 @@ h1 {
 
 .nav-links li {
     margin: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-links li:hover {
+    position: relative;
+    top: 3px;
+    border-color: black;
 }
 
 /** Profile **/
@@ -57,14 +117,49 @@ h1 {
     align-items: center;
 }
 
+.profile-div * {
+    margin: 5px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 9rem;
+    border-radius: 50%;
+}
+
 .download-resume {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+
+.social-links {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+
+.social-links li {
+    border-bottom: 1px solid transparent;
+}
+
+.social-links li:hover {
+    position: relative;
+    top: 3px;
+    border-color: black;
 }
 
 /** Will Slotterback Main **/
+.padding-left {
+    padding-left: 40px;
+}
+
+.skill-section {
+    margin-bottom: 22px;
+}
+
 .skill-metric {
     padding: 0;
     margin: 0;
@@ -75,7 +170,7 @@ h1 {
 .dot {
     width: 12px;
     height: 12px;
-    border-radius: 100px;
+    border-radius: 50%;
     margin: 5px;
     border: 1px solid #ABEBC6;
 }
@@ -86,4 +181,57 @@ h1 {
 
 .full {
     background-color: #ABEBC6;
+}
+
+/** Projects **/
+.project-container {
+    padding: 20px;
+    border-top: 1px solid #F0F3F4;
+    border-bottom: 1px solid #F0F3F4;
+}
+
+@media (min-width: 719px) {
+    .project-content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.project-thumbnail {
+    width: 90%;
+}
+
+/** Interests **/
+.interests-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.interest {
+    display: inline-flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.interest * {
+    margin: 10px;
+}
+
+/** Contact Me **/
+.contact-links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links li {
+    display: inline-flex;
+    margin: 20px 40px;
+    border-bottom: 1px solid transparent;
+}
+
+.contact-links li:hover {
+    border-color:black;
 }
