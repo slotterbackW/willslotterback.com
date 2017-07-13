@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/icons/w.png" type="image/x-icon">
     <title>Will Slotterback</title>
     <!-- https://onepagelove.com/certy -->
     <link rel="stylesheet" href="./styles.css">
@@ -25,8 +27,6 @@
                     <li aria-label="profile nav link"><a href="#profile" onclick="$('#profile').animatescroll();"><img src="./assets/icons/guest-16.ico"></a>
                     </li>
                     <li aria-label="projects nav link"><a href="#projects" onclick="$('#projects').animatescroll();"><img src="./assets/icons/light-bulb-16.ico"></a>
-                    </li>
-                    <li aria-label="interests nav link"><a href="#interests" onclick="$('#interests').animatescroll();"><img src="./assets/icons/star-16.ico"></a>
                     </li>
                     <li aria-label="contact me nav link"><a href="#contact" onclick="$('#contact').animatescroll();"><img src="./assets/icons/email-16.ico"></a>
                     </li>
@@ -63,7 +63,7 @@
                     </ul>
                 </div>
                 <div class="download-resume">
-                    <button class="btn primary">Download Resume</button>
+                    <a class="btn primary" target="_blank" href="./assets/Resume.pdf">View Resum&eacute;</a>
                 </div>
             </div>
             <div class="col-8 section animated slideInUp">
@@ -159,9 +159,9 @@
                         <h4>Zendesk</h4>
                         <p>Software Engineer Intern</p>
                         <ul class="work-bullets">
-                            <li>Something</li>
-                            <li>Something else</li>
-                            <li>Third thing</li>
+                            <li>Lead engineering work on new premium feature, collaborating with designers, product managers, and other engineers along the way.</li>
+                            <li>Lead initiative to root out inconsistency within Zendesk's support product in order to improve perception of reliability.</li>
+                            <li>Researched new technology to push project to refresh Zendesk's tech stack with React and GraphQL.</li>
                         </ul>
                     </div>
                 </div>
@@ -227,14 +227,13 @@
                 <div class="project-container">
                     <h4>Macro Preview</h4>
                     <div class="project-content row">
-                        <div class="col-4"><img class="project-thumbnail" src="#">
+                        <div class="col-4"><img class="project-thumbnail" src="./assets/zendesk_logo.png">
                         </div>
                         <div class="col-8">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                            <a target="_blank" href="#">Continue reading</a>
+                            <p>Macro Preview was my main project at Zendesk. I managed the project from start to 
+                                finish, collaborating with product management, designers, and engineers along the way. Currently
+                                Macro Preview is a beta feature within Zendesk, and soon will be gated behind Zendesk's premium plan</p>
+                            <a target="_blank" href="https://support.zendesk.com/hc/en-us/community/posts/115008034788-Macro-Preview-Overview">Feature announcement</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +259,7 @@
                             <p>Tridium XML Builder is an application I wrote for Opterra Energy Services LLC to automate the
                                 creation of their customer-facing HVAC graphics. To learn more about it, including how it
                                 was developed...</p>
-                            <a target="_blank" href="#">Click here</a>
+                            <a href="#">Click here (soon)</a>
                         </div>
                     </div>
                 </div>
@@ -275,28 +274,10 @@
                                 the app allows easy data collection of lighting fixtures by intuitively combining information
                                 such as quantity of fixtures, photos, sensor information, and added detail all into one list
                                 which can then be easily exported as a csv file.</p>
-                            <a target="_blank" href="#">Learn more</a>
+                            <a href="#">Learn more (soon)</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div id="interests" class="col-8 section">
-                <h1>Interests</h1>
-                <table class="interests-table">
-                    <tr>
-                        <td class="interest"><img src="./assets/icons/interests/soccer-3-48.ico"><span>Soccer</span></td>
-                        <td class="interest"><img src="./assets/icons/interests/hiking.svg"><span>Hiking</span></td>
-                        <td class="interest"><img src="./assets/icons/interests/cooking-pot-48.ico"><span>Cooking</span></td>
-                    </tr>
-                    <tr>
-                        <td class="interest"><img src="./assets/icons/interests/airplane-3-48.ico"><span>Travel</span></td>
-                        <td class="interest"><img src="./assets/icons/interests/skiing-48.ico"><span>Skiing</span></td>
-                        <td class="interest"><img src="./assets/icons/interests/headphones-48.ico"><span>Music</span></td>
-                    </tr>
-                </table>
             </div>
         </div>
         <div class="row last-section">

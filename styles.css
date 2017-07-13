@@ -58,11 +58,13 @@ hr {
 .primary {
     color: white;
     background: #2ECC71;
+    text-decoration: none;
 }
 
 .primary:hover {
     cursor: pointer;
     background: #82E0AA;
+    color: white;
 }
 
 h4 {
