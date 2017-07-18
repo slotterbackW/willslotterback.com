@@ -42,6 +42,7 @@ a:hover {
 
 .filler {
     padding: 20px;
+    box-sizing: border-box;
 }
 
 hr {
