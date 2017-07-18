@@ -37,6 +37,7 @@ a:hover {
 .section {
     padding: 20px;
     border: 1px solid #F0F3F4;
+    box-sizing: border-box;
 }
 
 .filler {
