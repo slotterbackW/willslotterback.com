@@ -240,3 +240,11 @@ h4 {
 .contact-links li:hover {
     border-color:black;
 }
+
+.contact-section {
+    padding: 2rem 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
