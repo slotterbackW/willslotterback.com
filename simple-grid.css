@@ -4,6 +4,7 @@
 **/
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
 
 /* UNIVERSAL */
 
@@ -16,13 +17,14 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 /* ROOT FONT STYLES */
 
 * {
-  font-family: 'Lato', Helvetica, sans-serif;
-  color: #333447;
+  font-family: 'Rubik', Helvetica, sans-serif;
+  color: #232323;
   line-height: 1.5;
 }
 
@@ -53,9 +55,9 @@ h6 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   font-weight: 200;
-  line-height: 1.8;
+  line-height: 1.45;
 }
 
 .font-light {
@@ -103,7 +105,7 @@ p {
   width: 100%;
 }
 
-.row [class^="col"] {
+.row [class^='col'] {
   float: left;
   margin: 0.5rem 2%;
   min-height: 0.125rem;
@@ -173,22 +175,24 @@ p {
 }
 
 .row::after {
-	content: "";
-	display: table;
-	clear: both;
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .hidden-sm {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+@media only screen and (min-width: 33.75em) {
+  /* 540px */
   .container {
     width: 80%;
   }
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (min-width: 45em) {
+  /* 720px */
   .col-1 {
     width: 4.33%;
   }
@@ -242,7 +246,8 @@ p {
   }
 }
 
-@media only screen and (min-width: 75em) { /* 960px */
+@media only screen and (min-width: 75em) {
+  /* 960px */
   .container {
     width: 75%;
     max-width: 75rem;

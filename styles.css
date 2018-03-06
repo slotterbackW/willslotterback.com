@@ -1,250 +1,249 @@
 body {
-    background-color: #F2F3F4;
+  background-color: #f2f3f4;
 }
 
 #background {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(./assets/background_rev_1.png);
-    background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(./assets/background_rev_1.png);
+  background-size: cover;
 }
 
 a:hover {
-    color: #2ECC71;
+  color: #2ecc71;
 }
 
 .col-8 {
-    background-color: white;
+  background-color: white;
 }
 
 .no-bottom {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-    background-color: transparent;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  background-color: transparent;
 }
 
 .last-section {
-    margin-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .shadow {
-    box-shadow: -4px 4px 10px #BDC3C7;
+  box-shadow: -4px 4px 10px #bdc3c7;
 }
 
 .section {
-    padding: 20px;
-    border: 1px solid #F0F3F4;
-    box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #f0f3f4;
+  box-sizing: border-box;
 }
 
 .filler {
-    padding: 20px;
-    box-sizing: border-box;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 hr {
-    border-top: 1px solid #F0F3F4;
+  border-top: 1px solid #f0f3f4;
 }
 
 .btn {
-    border: none;
-    border-radius: 50px;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    transition: background .2s ease-in;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: background 0.2s ease-in;
 }
 
 .primary {
-    color: white;
-    background: #2ECC71;
-    text-decoration: none;
+  color: white;
+  background: #2ecc71;
+  text-decoration: none;
 }
 
 .primary:hover {
-    cursor: pointer;
-    background: #82E0AA;
-    color: white;
+  cursor: pointer;
+  background: #82e0aa;
+  color: white;
 }
 
 h4 {
-    margin: 0;
+  margin: 0;
 }
 
 .label {
-    background-color: #ABEBC6;
-    padding: 3px;
-    text-align: center;
-    position: relative;
-    font-size: small;
+  background-color: #abebc6;
+  padding: 3px;
+  text-align: center;
+  position: relative;
+  font-size: small;
 }
 
-
- /* Should only be applied if window size is bigger than 873px */
- @media (min-width: 873px) {
-    .label:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 100%;
-        border-style: solid;
-        border-width: 12.5px 0 12.5px 10px;
-        border-color: transparent transparent transparent #ABEBC6;
-    }
- }
+/* Should only be applied if window size is bigger than 873px */
+@media (min-width: 873px) {
+  .label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 10px;
+    border-color: transparent transparent transparent #abebc6;
+  }
+}
 /** Nav Links **/
 .nav-links {
-    margin: 0;
-    display: inline-flex;
-    list-style: none;
+  margin: 0;
+  display: inline-flex;
+  list-style: none;
 }
 
 .nav-links li {
-    margin: 10px;
-    border-bottom: 1px solid transparent;
+  margin: 10px;
+  border-bottom: 1px solid transparent;
 }
 
 .nav-links li:hover {
-    position: relative;
-    top: 3px;
-    border-color: black;
+  position: relative;
+  top: 3px;
+  border-color: black;
 }
 
 /** Profile **/
 .profile-div {
-    background-color: #ABEBC6;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #abebc6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-div * {
-    margin: 5px;
-    text-align: center;
+  margin: 5px;
+  text-align: center;
 }
 
 .profile-image {
-    width: 9rem;
-    border-radius: 50%;
+  width: 9rem;
+  border-radius: 50%;
 }
 
 .download-resume {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    font-size: .9em;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 0.9em;
 }
 
 .social-links {
-    list-style: none;
-    display: inline-flex;
-    padding: 0;
+  list-style: none;
+  display: inline-flex;
+  padding: 0;
 }
 
 .social-links li {
-    border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .social-links li:hover {
-    position: relative;
-    top: 3px;
-    border-color: black;
+  position: relative;
+  top: 3px;
+  border-color: black;
 }
 
 /** Will Slotterback Main **/
 .padding-left {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .skill-section {
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 
 .skill-metric {
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  list-style: none;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 5px;
-    border: 1px solid #ABEBC6;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 5px;
+  border: 1px solid #abebc6;
 }
 
 .skill-rating {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .full {
-    background-color: #ABEBC6;
+  background-color: #abebc6;
 }
 
 /** Projects **/
 .project-container {
-    padding: 20px;
-    border-top: 1px solid #F0F3F4;
-    border-bottom: 1px solid #F0F3F4;
+  padding: 20px;
+  border-top: 1px solid #f0f3f4;
+  border-bottom: 1px solid #f0f3f4;
 }
 
 @media (min-width: 719px) {
-    .project-content {
-        display: flex;
-        align-items: center;
-    }
+  .project-content {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .project-thumbnail {
-    width: 90%;
+  width: 90%;
 }
 
 /** Interests **/
 .interests-table {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .interest {
-    display: inline-flex;
-    margin: 10px;
-    align-items: center;
+  display: inline-flex;
+  margin: 10px;
+  align-items: center;
 }
 
 .interest * {
-    margin: 10px;
+  margin: 10px;
 }
 
 /** Contact Me **/
 .contact-links {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-links li {
-    display: inline-flex;
-    margin: 8% 9%;
-    border-bottom: 1px solid transparent;
+  display: inline-flex;
+  margin: 8% 9%;
+  border-bottom: 1px solid transparent;
 }
 
 .contact-links li:hover {
-    border-color:black;
+  border-color: black;
 }
 
 .contact-section {
-    padding: 2rem 1rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: larger;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
 }
