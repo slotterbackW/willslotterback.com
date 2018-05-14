@@ -84,7 +84,7 @@ h4 {
 /* Should only be applied if window size is bigger than 873px */
 @media (min-width: 873px) {
   .label:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 100%;
@@ -246,4 +246,39 @@ h4 {
   justify-content: center;
   align-items: center;
   font-size: larger;
+}
+
+/** Bored? **/
+.white {
+  background-color: white;
+}
+
+.title {
+  font-size: 7rem;
+  margin: 3rem 0 0 0;
+}
+
+.subtitle {
+  display: inline-flex;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+
+.item-link {
+  text-decoration: none;
+}
+
+.item-image {
+  display: flex;
+  color: transparent;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.item-image:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
 }
