@@ -270,15 +270,74 @@ h4 {
 }
 
 .item-image {
-  display: flex;
-  color: transparent;
-  height: 100px;
-  justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: transparent;
+  display: flex;
+  min-height: 155px;
+  justify-content: center;
+  padding: 1rem;
 }
 
-.item-image:hover {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.1);
+.item-image > img {
+  width: 100%;
+}
+
+/** Thumbnails **/
+
+.wsj-thumb {
+  background-image: url("./assets/icons/wsj.png");
+}
+
+.nyt-thumb {
+  background-image: url("./assets/icons/nyt.jpg");
+}
+
+.ft-thumb {
+  background-image: url("./assets/icons/ft.png");
+}
+
+.hckr-thumb {
+  background-image: url("./assets/icons/hn.png");
+}
+
+.pud-thumb {
+  background-image: url("./assets/icons/pud.jpg");
+}
+
+.strat-thumb {
+  background-image: url("./assets/icons/stratchery.png");
+}
+
+.asos-thumb {
+  background-image: url("./assets/icons/asos.png");
+}
+
+.hm-thumb {
+  background-image: url("./assets/icons/hm.png");
+}
+
+.uo-thumb {
+  background-image: url("./assets/icons/uo.jpg");
+}
+
+.mp-thumb {
+  background-image: url("./assets/icons/mporter.jpg");
+}
+
+.norse-thumb {
+  background-image: url("./assets/icons/np.jpg");
+}
+
+.gq-thumb {
+  background-image: url("./assets/icons/gq.png");
+}
+
+.dez-thumb {
+  background-image: url("./assets/icons/dez.jpg");
+}
+
+.sb-thumb {
+  background-image: url("./assets/icons/sb.jpg");
 }
