@@ -3,12 +3,12 @@ body {
 }
 
 #background {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(./assets/background_rev_1.png);
+  background-image: url(./assets/triangles.png);
   background-size: cover;
 }
 
@@ -20,23 +20,23 @@ a:hover {
   background-color: white;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
+
 .no-bottom {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
   background-color: transparent;
 }
 
-.last-section {
+.mb-65 {
   margin-bottom: 65px;
-}
-
-.shadow {
-  box-shadow: -4px 4px 10px #bdc3c7;
 }
 
 .section {
   padding: 20px;
-  border: 1px solid #f0f3f4;
+  border-radius: 5px;
   box-sizing: border-box;
 }
 
@@ -114,6 +114,8 @@ h4 {
 /** Profile **/
 .profile-div {
   background-color: #abebc6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -131,6 +133,8 @@ h4 {
 }
 
 .download-resume {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding: 16px;
   display: flex;
   justify-content: center;
