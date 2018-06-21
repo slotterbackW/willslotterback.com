@@ -143,17 +143,17 @@ h4 {
   font-size: 0.9em;
 }
 
-.social-links {
+.links {
   list-style: none;
   display: inline-flex;
   padding: 0;
 }
 
-.social-links li {
+.links li {
   border-bottom: 1px solid transparent;
 }
 
-.social-links li:hover {
+.links li:hover {
   position: relative;
   top: 3px;
   border-color: black;
