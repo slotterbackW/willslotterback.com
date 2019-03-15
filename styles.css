@@ -102,13 +102,16 @@ h4 {
 
 .nav-links li {
   margin: 10px;
-  border-bottom: 1px solid transparent;
 }
 
-.nav-links li:hover {
-  position: relative;
-  top: 3px;
-  border-color: black;
+.nav-links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li a span {
+  padding-left: .5rem;
 }
 
 /** Profile **/
