@@ -12,6 +12,16 @@ body {
   background-size: cover;
 }
 
+.content {
+  margin-top: 50px;
+}
+
+@media (max-width: 720px) {
+  .content {
+      margin-top: 20px;
+  }
+}
+
 a:hover {
   color: #2ecc71;
 }
@@ -92,26 +102,6 @@ h4 {
     border-width: 12.5px 0 12.5px 10px;
     border-color: transparent transparent transparent #abebc6;
   }
-}
-/** Nav Links **/
-.nav-links {
-  margin: 0;
-  display: inline-flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin: 10px;
-}
-
-.nav-links li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-links li a span {
-  padding-left: .5rem;
 }
 
 /** Profile **/
