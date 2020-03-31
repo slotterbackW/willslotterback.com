@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/icons/w.png" type="image/x-icon" />
+    <title>D&D</title>
+    <!-- https://onepagelove.com/certy -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- simplegrid.io -->
+    <link rel="stylesheet" href="./simple-grid.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="./animate.css" />
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- animated scrolling -->
+    <script src="./scripts/animatescroll.min.js"></script>
+  </head>
+
+  <body class="white">
+    <div class="container">
+      <h1 class="title">D&D</h1>
+      <div class="row">
+        <iframe
+          src="./assets/D&D_Rhogar_Character_Sheet.pdf"
+          width="100%"
+          height="1150px"
+        ></iframe>
+      </div>
+      <div class="row">
+        <h4 class="subtitle" style="margin-top: 2rem;">Abilities</h4>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <ul>
+            <li>Resistant to fire damage</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li>
+              When attacking with 2h weapon, can re-roll on 1 or 2, must take
+              new roll.
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li>Immune to disease</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <ul>
+            <li>
+              Extra attack: When you take attack action, make 2 attacks instead
+              of one.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="subtitle" style="margin-top: 2rem;">Spells</h4>
+      <img src="./assets/spellcasting.png" width="100%" />
+      <div class="row">
+        <div class="col-4">
+          <h3>Abilities</h3>
+          <ul>
+            <li>
+              <a href="#">Breath Weapon</a>
+              <p>Breathe fire in a 15ft cone for 2d6 damage</p>
+            </li>
+            <li>
+              <a href="#Divine Sense">Divine Sense</a>
+              <p>Detect any celestial fiend or undead within 60ft</p>
+            </li>
+            <li>
+              <a href="#Lay on Hands">Lay on Hands</a>
+              <p>restore hit points or cure poison/disease from pool</p>
+            </li>
+            <li>
+              <a href="#Divine Smite">Divine Smite</a>
+              <p>
+                After hitting, smite for 2d8 damage plus 1d8 for each spell slot
+                above 1
+              </p>
+            </li>
+            <li>
+              <h4>Channel Divinity</h4>
+              <p>
+                1 use per rest of either:
+              </p>
+              <ul>
+                <li>
+                  <a href="#">Champion Challenge</a>
+                  <p>
+                    As a bonus action, each creature within 30ft must make WIS
+                    save or cannot move 30ft from you.
+                  </p>
+                </li>
+                <li>
+                  <a href="#">Turn the Tide</a>
+                  <p>
+                    As a bonus action, Give 1d6 + CHR mod to any creatures you
+                    choose that have less than half HP
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h3>Spells</h3>
+          <ul>
+            <li>
+              <a href="#Cure Wounds">Cure Wounds</a>
+              <p>Touch someone to heal 1d8 + spellcasting ability</p>
+            </li>
+            <li>
+              <a href="#Detect Magic">Detect Magic</a>
+              <p>Concentration: Sense magic within 30ft for 10min</p>
+            </li>
+            <li>
+              <a href="#Divine Favor">Divine Favor</a>
+              <p>Concentration: Weapon does extra 1d4 for 1 minute</p>
+            </li>
+            <li>
+              <a href="#Shield of Faith">Shield of Faith</a>
+              <p>Concentration: Grant +2 AC to to someone for 10 minutes</p>
+            </li>
+            <li>
+              <a href="#Aid">Aid</a>
+              <p>Give 3 allies +5 HP for 8 hours</p>
+            </li>
+            <li>
+              <a href="#Magic Weapon">Magic Weapon</a>
+              <p>Concentration: Add +1 to damage and attack rolls for 1 hour</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h3>Oaths</h3>
+          <ul>
+            <li>
+              <a href="#Command (oath)">Command (oath)</a>
+              <p>
+                Command a creature to approach, drop, flee, grovel, or halt.
+                (Affect 1 additional creature per spell slot level)
+              </p>
+            </li>
+            <li>
+              <a href="#Compelled Duel (oath)">Compelled Duel (oath)</a>
+              <p>Compel a creature within 30 feet to attack you</p>
+            </li>
+            <li>
+              <a href="#Warding Bond (oath)">Warding Bond (oath)</a>
+              <p>
+                Grant +1 to AC and saving throws to an ally while alive and it's
+                within 60ft and wearing ring you give it
+              </p>
+            </li>
+            <li>
+              <a href="#Zone of Truth (oath)">Zone of Truth (oath)</a>
+              <p>
+                Create 15-foot circle within which anything must tell the truth
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div style="width: 40em; display: flex; flex-direction: column;">
+        <div id="Divine Sense">
+          <h2>Divine Sense</h2>
+          <div>
+            <p>
+              The presence of strong evil registers on your Senses like a
+              noxious odor, and powerful good rings like heavenly music in your
+              ears. As an action, you can open your awareness to detect such
+              forces. Until the end of your next turn, you know the location of
+              any Celestial, fiend, or Undead within 60 feet of you that is not
+              behind total cover. You know the type (celestial, fiend, or
+              undead) of any being whose presence you sense, but not its
+              identity (the Vampire Count Strahd von Zarovich, for instance).
+              Within the same radius, you also detect the presence of any place
+              or object that has been consecrated or desecrated, as with the
+              Hallow spell.
+            </p>
+            <p>
+              You can use this feature a number of times equal to 1 + your
+              Charisma modifier. When you finish a Long Rest, you regain all
+              expended uses.
+            </p>
+          </div>
+        </div>
+        <div id="Lay on Hands">
+          <h2>Lay on Hands</h2>
+          <div>
+            <p>
+              Your blessed touch can heal wounds. You have a pool of Healing
+              power that replenishes when you take a Long Rest. With that pool,
+              you can restore a total number of Hit Points equal to your Paladin
+              level x 5.
+            </p>
+            <p>
+              As an action, you can touch a creature and draw power from the
+              pool to restore a number of Hit Points to that creature, up to the
+              maximum amount remaining in your pool.
+            </p>
+            <p>
+              Alternatively, you can expend 5 Hit Points from your pool of
+              Healing to cure the target of one disease or neutralize one poison
+              affecting it. You can cure multiple Diseases and neutralize
+              multiple Poisons with a single use of Lay on Hands, expending Hit
+              Points separately for each one.
+            </p>
+            <p>This feature has no effect on Undead and Constructs.</p>
+          </div>
+        </div>
+        <div id="Divine Smite">
+          <h2>Divine Smite</h2>
+          <div>
+            <p>
+              Starting at 2nd Level, when you hit a creature with a melee weapon
+              Attack, you can expend one spell slot to deal radiant damage to
+              the target, in addition to the weapon's damage. The extra damage
+              is 2d8 for a 1st-level spell slot, plus 1d8 for each Spell Level
+              higher than 1st, to a maximum of 5d8. The damage increases by 1d8
+              if the target is an Undead or a fiend.
+            </p>
+          </div>
+        </div>
+        <div id="Cure Wounds">
+          <h2>Cure Wounds</h2>
+          <div>
+            <p><i>1st-level evocation</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 action</p>
+              <p><b>Range:</b> Touch</p>
+              <p><b>Components:</b> V, S</p>
+              <p><b>Duration:</b> Instantaneous</p>
+            </div>
+            <p>
+              A creature you touch regains a number of hit points equal to 1d8 +
+              your spellcasting ability modifier. This spell has no effect on
+              undead or constructs.
+            </p>
+            <p>
+              At Higher Levels. When you cast this spell using a spell slot of
+              2nd level or higher, the healing increases by 1d8 for each slot
+              level above 1st.
+            </p>
+          </div>
+        </div>
+        <div id="Detect Magic">
+          <h2>Detect Magic</h2>
+          <div>
+            <p><i>1st-level divination (ritual)</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 action</p>
+              <p><b>Range:</b> Self</p>
+              <p><b>Components:</b> V, S</p>
+              <p><b>Duration:</b> Concentration, up to 10 minutes</p>
+            </div>
+            <p>
+              For the duration, you sense the presence of magic within 30 feet
+              of you. If you sense magic in this way, you can use your action to
+              see a faint aura around any visible creature or object in the area
+              that bears magic, and you learn its school of magic, if any.
+            </p>
+            <p>
+              The spell can penetrate most barriers, but is blocked by 1 foot of
+              stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of
+              wood or dirt.
+            </p>
+          </div>
+        </div>
+        <div id="Divine Favor">
+          <h2>Divine Favor</h2>
+          <div>
+            <p><i>1st-level evocation</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 bonus action</p>
+              <p><b>Range:</b> Self</p>
+              <p><b>Components:</b> V, S</p>
+              <p><b>Duration:</b> Concentration, up to 1 minute</p>
+            </div>
+            <p>
+              Your prayer empowers you with divine radiance. Until the spell
+              ends, your weapon attacks deal an extra 1d4 radiant damage on a
+              hit.
+            </p>
+          </div>
+        </div>
+        <div id="Shield of Faith">
+          <h2>Shield of Faith</h2>
+          <div>
+            <p><i>1st-level abjuration</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 bonus action</p>
+              <p><b>Range:</b> 60 feet</p>
+              <p>
+                <b>Components:</b> V, S, M (a small parchment with a bit of holy
+                text written on it)
+              </p>
+              <p><b>Duration:</b> Concentration, up to 10 minutes</p>
+            </div>
+            <p>
+              A shimmering field appears and surrounds a creature of your choice
+              within range, granting it a +2 bonus to AC for the duration.
+            </p>
+          </div>
+        </div>
+        <div id="Aid">
+          <h2>Aid</h2>
+          <div>
+            <p><i>2nd-level abjuration</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 action</p>
+              <p><b>Range:</b> 30 feet</p>
+              <p><b>Components:</b> V, S, M (a tiny strip of white cloth)</p>
+              <p><b>Duration:</b> 8 hours</p>
+            </div>
+            <p>
+              Your spell bolsters your allies with toughness and resolve. Choose
+              up to three creatures within range. Each target’s hit point
+              maximum and current hit points increase by 5 for the duration.
+            </p>
+            <p>
+              At Higher Levels. When you cast this spell using a spell slot of
+              3rd level or higher, a target’s hit points increase by an
+              additional 5 for each slot level above 2nd.
+            </p>
+          </div>
+        </div>
+        <div id="Magic Weapon">
+          <h2>Magic Weapon</h2>
+          <div>
+            <p><i>2nd-level transmutation</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 bonus action</p>
+              <p><b>Range:</b> Touch</p>
+              <p><b>Components:</b> V, S</p>
+              <p><b>Duration:</b> Concentration, up to 1 hour</p>
+            </div>
+            <p>
+              You touch a nonmagical weapon. Until the spell ends, that weapon
+              becomes a magic weapon with a +1 bonus to attack rolls and damage
+              rolls.
+            </p>
+            <p>
+              At Higher Levels. When you cast this spell using a spell slot of
+              4th level or higher, the bonus increases to +2. When you use a
+              spell slot of 6th level or higher, the bonus increases to +3.
+            </p>
+          </div>
+        </div>
+        <div id="Command (oath)">
+          <h2>Command (oath)</h2>
+          <div>
+            <p>
+              <i>1st-level enchantment</i>
+            </p>
+            <div>
+              <p><b>Casting Time:</b> 1 action</p>
+              <p><b>Range:</b> 60 feet</p>
+              <p><b>Components:</b> V</p>
+              <p><b>Duration:</b> 1 round</p>
+            </div>
+            <p>
+              You speak a one-word command to a creature you can see within
+              range. The target must succeed on a Wisdom saving throw or follow
+              the command on its next turn. The spell has no effect if the
+              target is undead, if it doesn’t understand your language, or if
+              your command is directly harmful to it. Some typical commands and
+              their effects follow. You might issue a command other than one
+              described here. If you do so, the DM determines how the target
+              behaves. If the target can’t follow your command, the spell ends.
+            </p>
+            <p>
+              <b>Approach.</b> The target moves toward you by the shortest and
+              most direct route, ending its turn if it moves within 5 feet of
+              you.
+            </p>
+            <p>
+              <b>Drop.</b> The target drops whatever it is holding and then ends
+              its turn.
+            </p>
+            <p>
+              <b>Flee.</b> The target spends its turn moving away from you by
+              the fastest available means.
+            </p>
+            <p><b>Grovel.</b> The target falls prone and then ends its turn.</p>
+            <p>
+              <b>Halt.</b> The target doesn’t move and takes no actions. A
+              flying creature stays aloft, provided that it is able to do so. If
+              it must move to stay aloft, it flies the minimum distance needed
+              to remain in the air.
+            </p>
+            <p>
+              <b>At Higher Levels.</b> When you cast this spell using a spell
+              slot of 2nd level or higher, you can affect one additional
+              creature for each slot level above 1st. The creatures must be
+              within 30 feet of each other when you target them.
+            </p>
+          </div>
+        </div>
+        <div id="Compelled Duel (oath)">
+          <h2>Compelled Duel (oath)</h2>
+          <div>
+            <p><i>1st-level enchantment</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 bonus action</p>
+              <p><b>Range:</b> 30 feet</p>
+              <p><b>Components:</b> V</p>
+              <p><b>Duration:</b> Concentration, up to 1 minute</p>
+            </div>
+            <p>
+              You attempt to compel a creature into a duel. One creature that
+              you can see within range must make a Wisdom saving throw. On a
+              failed save, the creature is drawn to you, compelled by your
+              divine demand. For the duration, it has disadvantage on attack
+              rolls against creatures other than you, and must make a Wisdom
+              saving throw each time it attempts to move to a space that is more
+              than 30 feet away from you; if it succeeds on this saving throw,
+              this spell doesn’t restrict the target’s movement for that turn.
+            </p>
+            <p>
+              The spell ends if you attack any other creature, if you cast a
+              spell that targets a hostile creature other than the target, if a
+              creature friendly to you damages the target or casts a harmful
+              spell on it, or if you end your turn more than 30 feet away from
+              the target.
+            </p>
+          </div>
+        </div>
+        <div id="Warding Bond (oath)">
+          <h2>Warding Bond (oath)</h2>
+          <div>
+            <p><i>2nd-level abjuration</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 action</p>
+              <p><b>Range:</b> Touch</p>
+              <p>
+                <b>Components:</b> V, S, M (a pair of platinum rings worth at
+                least 50 gp each, which you and target must wear for the
+                duration)
+              </p>
+              <p><b>Duration:</b> 1 hour</p>
+            </div>
+            <p>
+              This spell wards a willing creature you touch and creates a mystic
+              connection between you and the target until the spell ends.
+            </p>
+            <p>
+              While the target is within 60 feet of you, it gains a +1 bonus to
+              AC and saving throws, and it has resistance to all damage. Also,
+              each time it takes damage, you take the same amount of damage.
+            </p>
+            <p>
+              The spell ends if you drop to 0 hit points or if you and the
+              target become separated by more than 60 feet. It also ends if the
+              spell is cast again on either of the connected creatures. You can
+              also dismiss the spell as an action.
+            </p>
+          </div>
+        </div>
+        <div id="Zone of Truth (oath)">
+          <h2>Zone of Truth (oath)</h2>
+          <div>
+            <p><i>2nd-level enchantment</i></p>
+            <div>
+              <p><b>Casting Time:</b> 1 action</p>
+              <p><b>Range:</b> 60 feet</p>
+              <p><b>Components:</b> V, S</p>
+              <p><b>Duration:</b> 10 minutes</p>
+            </div>
+            <p>
+              You create a magical zone that guards against deception in a
+              15-foot-radius sphere centered on a point of your choice within
+              range. Until the spell ends, a creature that enters the spell’s
+              area for the first time on a turn or starts its turn there must
+              make a Charisma saving throw. On a failed save, a creature can’t
+              speak a deliberate lie while in the radius. You know whether each
+              creature succeeds or fails on its saving throw.
+            </p>
+            <p>
+              An affected creature is aware of the spell and can thus avoid
+              answering questions to which it would normally respond with a lie.
+              Such creatures can be evasive in its answers as long as it remains
+              within the boundaries of the truth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
