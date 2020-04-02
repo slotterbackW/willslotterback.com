@@ -18,7 +18,7 @@ body {
 
 @media (max-width: 720px) {
   .content {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -279,6 +279,14 @@ h4 {
 
 .item-image > img {
   width: 100%;
+}
+
+.notes-box {
+  width: 1084px;
+  height: 300px;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+  padding: 1rem;
 }
 
 /** Thumbnails **/
