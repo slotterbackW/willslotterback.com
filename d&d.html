@@ -22,7 +22,7 @@
       <h1 class="title">D&D</h1>
       <div class="row">
         <iframe
-          src="./assets/D&D_Rhogar_Character_Sheet.pdf"
+          src="./assets/D&D_Rhogar.pdf"
           width="100%"
           height="1150px"
         ></iframe>
@@ -31,6 +31,9 @@
         <h4 class="subtitle" style="margin-top: 2rem;">Notes</h4>
       </div>
       <div class="row">
+        <p>L1 Spells Left <input value="4" /></p>
+        <p>L2 Spells Left <input value="3" /></p>
+        <p>HP Pool <input value="25" /></p>
         <textarea class="notes-box"></textarea>
       </div>
       <div class="row">
@@ -53,20 +56,19 @@
               When attacking with 2h weapon, can re-roll on 1 or 2 on damage
               die, must take new roll.
             </li>
+            <li>
+              Extra attack: When you take attack action, make 2 attacks instead
+              of one.
+            </li>
           </ul>
         </div>
         <div class="col-4">
           <ul>
             <li>Immune to disease</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <ul>
             <li>
-              Extra attack: When you take attack action, make 2 attacks instead
-              of one.
+              When a creature within 5 feet takes damage you can substitute your
+              health for theirs, so you take the damage instead of them. This
+              damage to you can't be reduced or prevented in any way.
             </li>
           </ul>
         </div>
@@ -90,14 +92,6 @@
                 After hitting, smite for 2d8 radiant damage. L1.
               </p>
             </li>
-            <li>
-              <a href="#Branding Smite">Branding Smite</a>
-              <p>
-                Concentration: For 1 minute next hit does extra 2d6 radiant and
-                causes creature to emit dim light, so they can't be invisible
-                until spell ends. L2.
-              </p>
-            </li>
           </ul>
         </div>
         <div class="col-3">
@@ -106,6 +100,17 @@
             <li>
               <a href="#Aid">Aid</a>
               <p>Give 3 allies +5 HP for 8 hours. L2</p>
+            </li>
+            <li>
+              <a href="#Protection from Evil and Good"
+                >Protection from Evil and Good</a
+              >
+              <p>
+                For 10 minutes target you touch can't be charmed, frightened, or
+                possessed by aberrations, celestials, elementals, fey, fiends,
+                and undead. These creature types also have disadvantage on
+                attacks against the target. L1.
+              </p>
             </li>
             <li>
               <a href="#Shield of Faith">Shield of Faith</a>
@@ -147,6 +152,13 @@
             <li>
               <a href="#Lay on Hands">Lay on Hands</a>
               <p>restore hit points or cure poison/disease from pool.</p>
+            </li>
+            <li>
+              <a href="#Protection from Poison">Protection from Poison</a>
+              <p>
+                Touch a creature to remove one poison and give advantage against
+                poison for 1 hour. L2.
+              </p>
             </li>
             <li>
               <a href="#">Turn the Tide (Channel divinity)</a>
@@ -296,8 +308,10 @@
                 >Protection from Evil and Good</a
               >
               <p>
-                For 10 minutes ally you touch gains some buffs against certain
-                types of creatures. L1.
+                For 10 minutes target you touch can't be charmed, frightened, or
+                possessed by aberrations, celestials, elementals, fey, fiends,
+                and undead. These creature types also have disadvantage on
+                attacks against the target. L1.
               </p>
             </li>
             <li>
